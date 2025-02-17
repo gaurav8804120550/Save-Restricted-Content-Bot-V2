@@ -74,8 +74,8 @@ async def token_handler(client, message):
     user_id = message.chat.id
     if len(message.command) <= 1:
         image_url = "https://i.postimg.cc/v8q8kGyz/startimg-1.jpg"
-        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/team_spy_pro")
-        premium = InlineKeyboardButton("Get Premium", url="https://t.me/kingofpatal")   
+        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/skillwithgaurav")
+        premium = InlineKeyboardButton("Get Premium", url="https://t.me/ytbr_67")   
         keyboard = InlineKeyboardMarkup([
             [join_button],   
             [premium]    
@@ -84,9 +84,10 @@ async def token_handler(client, message):
         await message.reply_photo(
             msg.photo.file_id,
             caption=(
-                "Hi 👋 Welcome, Wanna intro...?\n\n"
-                "✳️ I can save posts from channels or groups where forwarding is off. I can download videos/audio from YT, INSTA, ... social platforms\n"
-                "✳️ Simply send the post link of a public channel. For private channels, do /login. Send /help to know more."
+               "Hi 👋 Welcome! Wanna introduce yourself? 😊\n\n"  
+"✳️ I can save posts from channels or groups where forwarding is restricted. I can also download videos/audio from YouTube, Instagram, and other social platforms. 📥🎥🎵\n"  
+"✳️ Just send the post link of a public channel, and for private channels, use /login. Send /help to learn more. 🔍\n\n"  
+"🤖 Bot created by Gaurav Rajput"
             ),
             reply_markup=keyboard
         )
